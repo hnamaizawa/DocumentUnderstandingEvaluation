@@ -42,3 +42,13 @@ Output フォルダへ幾つか Excel ファイルが生成されます。
 
 3. `02_CopyActualValuesToReport.xaml` を実行  
 Output フォルダの Excel ファイルが更新され、2. で修正した想定する内容と各 OCR エンジンの読み取り結果が比較した結果が出力されます。
+
+
+## 補足説明
+
+- Input フォルダにテスト用請求書サンプル（`請求書_2-1.pdf`） が含まれています。
+
+- `DU01_GetDigitizeDocumentInfoByOCR.xaml` の `ApplyOcrOnPdf` 定義に Yes を設定しています。必要に応じて変更ください。
+
+- `Config.xlsx` の `OcrSettings` セルの環境変数名を変更すると WF 側も変更する必要があるため、本サンプルではテンプレートが生成した環境変数名のまま利用しております。
+
