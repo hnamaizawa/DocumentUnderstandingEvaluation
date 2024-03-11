@@ -1,4 +1,4 @@
-# DocumentUnderstanding Evaluation サンプルの説明
+# Document Understanding Evaluation サンプルの説明
 
 ## 前提
 本サンプルは[こちら](https://github.com/masaki-kumamoto/DocumentUnderstandingEvaluationTemplate)の環境のテンプレートを用いて UiPath のプロジェクトを生成後に動作確認を実施したものです。
