@@ -10,7 +10,7 @@
 2. Windows プロジェクトへ変換
 3. UiPath Document OCR の部分を CJK OCR へ変更  
 `assets\InvokeWorkflows\01_DocumentUnderstanding\DU01_GetDigitizeDocumentInfoByOCR.xaml` の一番下の OCR 定義を CJK OCR へ変更しました。
-4. 出力する Excel ファイルの列を絞る `EX02_HideColumns xaml` を動かすとエラーが発生したため、暫定処理として処理全体を無効化して対処
+4. Windows プロジェクトへ変換後に Excel ファイルの列を絞る `EX02_HideColumns xaml` を動かすとエラーが発生したため、暫定処理として処理全体を無効化して対処
 
 ## 事前準備
 本サンプルを Clone 後に UiPath Studio からプロジェクトを開き、以下の作業を実施します。
