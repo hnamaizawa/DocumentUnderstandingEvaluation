@@ -17,9 +17,9 @@
 詳細はプロジェクト直下に含まれる `ReadMe.pdf` ファイルをご覧ください。
 
 - `Config.xlsx` の以下の項目を設定
-  - `DuSettings` セルの `DU_ApiKey` へ DU を動かすために必要な API Key を設定します。
-  - `ActionSettings` セルの `AC_AssignUserEmail` へ Action Center でタスクをアサインしたいユーザーのメールアドレスを設定します。
-  - 必要に応じて `OcrSettings` セルの Google Cloud OCR と Microsoft Azure Computer Vision OCR の環境変数へ Endpoint、API-Key、Language などを設定します。
+  - `DuSettings` シートの `DU_ApiKey` へ DU を動かすために必要な API Key を設定します。
+  - `ActionSettings` シートの `AC_AssignUserEmail` へ Action Center でタスクをアサインしたいユーザーのメールアドレスを設定します。
+  - 必要に応じて `OcrSettings` シートの Google Cloud OCR と Microsoft Azure Computer Vision OCR の環境変数へ Endpoint、API-Key、Language などを設定します。
     - （補足）本サンプルでは Google Cloud OCR と Microsoft Azure Computer Vision OCR の環境変数に対応した WF 実装が含まれています。（他の OCR 用環境変数に対応した実装は定義されておりません）
 
 - `DU_GetExtractionResult.xaml` の以下の項目を設定
@@ -42,7 +42,9 @@ Output フォルダへ幾つか Excel ファイルが生成されます。
 
 3. `02_CopyActualValuesToReport.xaml` を実行  
 Output フォルダの Excel ファイルが更新され、2. で修正した内容と各 OCR エンジンの読み取り結果が比較した結果が出力されます。  
-（補足）最初にフォルダ選択ダイアログが表示されるため、実行時にダイアログが裏に表示されていないかご注意ください。 
+（補足1）実行の最初にフォルダ選択ダイアログが表示されるため、処理が開始できない場合はダイアログが裏に表示されていないかご確認ください。  
+（補足2）DU_Evaluation ファイルの `Summary` シートの右側に精度（Accuracy）が出力されています。  
+（補足3）DU_Evaluation ファイルの帳票ファイル名のシートに抽出データ（ExtractedValue）と想定するデータ（ActualValue）が対となって整理されています。
 
 ## 補足説明
 
@@ -50,5 +52,5 @@ Output フォルダの Excel ファイルが更新され、2. で修正した内
 
 - `DU01_GetDigitizeDocumentInfoByOCR.xaml` の `ApplyOcrOnPdf` 定義に Yes を設定しています。必要に応じて変更ください。
 
-- `Config.xlsx` の `OcrSettings` セルの環境変数名を変更すると WF 側も変更する必要があるため、本サンプルではテンプレートが生成した環境変数名のまま利用しております。
+- `Config.xlsx` の `OcrSettings` シートの環境変数名を変更すると WF 側も変更する必要があるため、本サンプルではテンプレートが生成した環境変数名のまま利用しております。
 
