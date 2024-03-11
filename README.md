@@ -5,7 +5,7 @@
 
 テンプレートから生成された Windows レガシープロジェクトに対して以下のような対応を実施し、Windows プロジェクトとして動作することを確認しました。
 
-1. テンプレートが用意した ML 抽出器ではなく、改めて ML 抽出器を作成し、Document Manager 上で設定したフィールド情報を取得することで WF 上のタクソノミー定義とのマッピングを実施  
+1. テンプレートが用意した ML 抽出器ではなく、改めて ML 抽出器を作成し、Document Manager(DM) 上で設定したフィールド情報を取得することで WF 上のタクソノミー定義とのマッピングを実施  
 （補足）基本的に本サンプルを利用する場合、最初にこの作業が必要とお考えください。
 2. Windows プロジェクトへ変換
 3. UiPath Document OCR の部分を CJK OCR へ変更  
@@ -20,7 +20,7 @@
   - `DuSettings` セルの `DU_ApiKey` へ DU を動かすために必要な API Key を設定します。
   - `ActionSettings` セルの `AC_AssignUserEmail` へ Action Center でタスクをアサインしたいユーザーのメールアドレスを設定します。
   - 必要に応じて `OcrSettings` セルの Google Cloud OCR と Microsoft Azure Computer Vision OCR の環境変数へ Endpoint、API-Key、Language などを設定します。
-    - （補足）本サンプルでは Google Cloud OCR と Microsoft Azure Computer Vision OCR に対応した定義が用意されています。（他の OCR 用環境変数に対応した実装は定義されておりません）
+    - （補足）本サンプルでは Google Cloud OCR と Microsoft Azure Computer Vision OCR の環境変数に対応した WF 実装が含まれています。（他の OCR 用環境変数に対応した実装は定義されておりません）
 
 - `DU_GetExtractionResult.xaml` の以下の項目を設定
   - 一番下のマシンラーニング抽出器へ ML サーバーへの Endpoint、もしくは ML スキルを指定します。
