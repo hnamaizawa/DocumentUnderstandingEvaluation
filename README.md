@@ -14,7 +14,7 @@
 
 ## 事前準備
 本サンプルを Clone 後に UiPath Studio からプロジェクトを開き、以下の作業を実施します。
-詳細はプロジェクト直下に含まれる `ReadMe.pdf` ファイルをご覧ください。
+詳細はプロジェクト直下に含まれる `ReadMe.pdf` ファイルや[説明動画](https://www.youtube.com/watch?v=snEatRjWHjg)をご覧ください。
 
 - `Config.xlsx` の以下の項目を設定
   - `DuSettings` シートの `DU_ApiKey` へ DU を動かすために必要な API Key を設定します。
