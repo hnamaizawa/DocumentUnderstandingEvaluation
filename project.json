@@ -1,0 +1,79 @@
+{
+  "name": "DocumentUnderstandingEvaluation",
+  "projectId": "08fef421-305d-43d1-8224-fb2a414b7ba8",
+  "description": "",
+  "main": "01_ExtractDocumentsData.xaml",
+  "dependencies": {
+    "CustomDUActivities": "[1.0.4]",
+    "UiPath.DocumentUnderstanding.ML.Activities": "[1.17.1]",
+    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.IntegrationService.Activities": "[1.3.0-beta.20240219.9]",
+    "UiPath.IntelligentOCR.Activities": "[6.5.3]",
+    "UiPath.OCR.Activities": "[3.11.0]",
+    "UiPath.PDF.Activities": "[3.10.1]",
+    "UiPath.Persistence.Activities": "[1.3.3]",
+    "UiPath.System.Activities": "[21.10.4]",
+    "UiPath.Testing.Activities": "[1.4.6]",
+    "UiPath.UIAutomation.Activities": "[21.10.5]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.10.4.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": false,
+    "supportsPersistence": true,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": true,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cf5291f9-855a-469d-873e-fa4899ca16d6",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "01_ExtractDocumentsData.xaml"
+      }
+    ],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "02_CopyActualValuesToReport.xaml",
+      "uniqueId": "307e7b7d-2631-4bc2-be40-66dd639b783e",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {
+    "iconUrl": "https://download.uipath.com/DU_icon.png?documentunderstanding-ml"
+  },
+  "targetFramework": "Windows"
+}
