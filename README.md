@@ -1,7 +1,15 @@
 # Document Understanding Evaluation サンプルの説明
 
+## 謝辞
+
+このプロジェクトは、多くの人々の支援と励ましによって実現しました。特に、以下の方々に深い感謝を表します。
+
+- **隈元**さんには、参考にさせていただいたプロジェクトに関する様々な情報をご提供いただきました。ありがとうございました。
+
+また、このプロジェクトに貢献してくださったすべての協力者に心から感謝いたします。
+
 ## 前提
-本サンプルは[こちら](https://github.com/masaki-kumamoto/DocumentUnderstandingEvaluationTemplate)の環境のテンプレートを用いて UiPath のプロジェクトを生成後に動作確認を実施したものです。
+本サンプルは[こちらのプロジェクト](https://github.com/masaki-kumamoto/DocumentUnderstandingEvaluationTemplate)のテンプレートを用いて UiPath のプロジェクトを生成後に動作確認を実施したものです。
 
 テンプレートから生成された Windows レガシープロジェクトに対して以下のような対応を実施し、Windows プロジェクトとして動作することを確認しました。
 
