@@ -8,6 +8,14 @@
 
 また、このプロジェクトに貢献してくださったすべての協力者に心から感謝いたします。
 
+---
+
+## 最新の更新情報
+
+- **FAQ の追加 (2024-03-19)**: 本 README の最後へ[よくある質問](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation?tab=readme-ov-file#faq---%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F)を追記しました。
+
+---
+
 ## 前提
 本サンプルは[こちらのプロジェクト](https://github.com/masaki-kumamoto/DocumentUnderstandingEvaluationTemplate)のテンプレートを用いて UiPath のプロジェクトを生成後に動作確認を実施したものです。
 
@@ -62,3 +70,31 @@ Output フォルダの Excel ファイルが更新され、2. で修正した内
 
 - `Config.xlsx` の `OcrSettings` シートの環境変数名を変更すると WF 側も変更する必要があるため、本サンプルではテンプレートが生成した環境変数名のまま利用しております。
 
+---
+
+## FAQ - よくある質問
+
+#### Q: タクソノミーマネージャーを使おうとした際に `To run this application, you must install missing frameworks for .NET.` のメッセージが出力されました。どのように対処すれば良いでしょうか？
+**A:** 以下のようにパッケージ＆依存関係パッケージをバージョンアップすることで解決できたと報告がありました。参考にしてみてください。
+~~~
+IntelligentOCR.Activities: 6.5.3 -> 6.14.1
+UiPath.OCR.Activities: 3.11.0 -> 3.17.1
+PDF.Activities: 3.10.1 -> 3.16.0
+ML.Activities: 1.17.1 -> 1.24.0
+~~~
+
+#### Q: DU01_GetDigitizeDocumentInfoByOCR.xaml の OCR アクティビティが UiPath Document OCR となっている箇所がありますが変更が必要でしょうか？
+**A:** 利用したい OCR エンジンに対応したアクティビティに変更する必要があります。  
+
+  
+#### Q: [こちら](https://github.com/hnamaizawa/Document-Processing-Code-Samples/blob/master/Samples/SampleActivities/Basic/OCR/ClovaOCREngine.cs)の Clova OCR Engine アクティビティを利用するようにしましたが、韓国語として読み取ろうとしています。どうすれば良いですか？
+**A:** Clova OCR Engine アクティビティの Languages オプションへ "ja" を設定してください。  
+
+  
+#### Q: 長いファイル名の帳票を読み取ろうとした際にエラーが発生します。どうすれば良いでしょうか？
+**A:** 出力結果 Excel のシート名に帳票のファイル名を利用しているため、30文字以上とならないようにファイル名を調整してください。  
+
+  
+
+  
+  
