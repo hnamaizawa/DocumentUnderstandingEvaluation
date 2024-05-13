@@ -134,6 +134,7 @@
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -190,9 +191,10 @@
       <Variable x:TypeArguments="x:Boolean" Default="[Convert.ToBoolean(in_Config(&quot;AL_UseExistingActionListExcel&quot;).ToString)]" Name="AL_UseExistingActionListExcel" />
       <Variable x:TypeArguments="x:String" Default="[in_Config(&quot;AL_ExistingActionListExcelPath&quot;).ToString]" Name="AL_ExistingActionListExcelPath" />
       <Variable x:TypeArguments="x:String" Default="L" Name="reportDetail_isCorrectCol" />
-      <Variable x:TypeArguments="x:String" Name="OCR_MicrosoftAzureComputerVisionOCR_SleepTime">
+      <Variable x:TypeArguments="x:String" Default="[in_Config(&quot;OCR_MicrosoftAzureComputerVisionOCR_SleepTime&quot;).ToString]" Name="OCR_MicrosoftAzureComputerVisionOCR_SleepTime" />
+      <Variable x:TypeArguments="x:String" Name="DU_ML_Model_Endpoint">
         <Variable.Default>
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;OCR_MicrosoftAzureComputerVisionOCR_SleepTime&quot;).ToString" />
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;DU_ML_Model_Endpoint&quot;).ToString" />
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
@@ -427,23 +429,41 @@
                     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="706.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;[&quot; + OCR_Use.Key + &quot; : &quot; + fileName + &quot;] Digitize DocumentInfo By OCR&quot;]" />
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DU01_GetDigitizeDocumentInfoByOCR" sap:VirtualizedContainerService.HintSize="706.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="assets\InvokeWorkflows\01_DocumentUnderstanding\DU01_GetDigitizeDocumentInfoByOCR.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <OutArgument x:TypeArguments="x:String" x:Key="docText">
-                          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="docText" />
+                        <OutArgument x:TypeArguments="x:String" x:Key="docText">[docText]</OutArgument>
+                        <OutArgument x:TypeArguments="p1:Document" x:Key="docObjMdl">[docObjMdl]</OutArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_ApiKey">[OCR_MicrosoftAzureComputerVisionOCR_ApiKey]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_EndPoint">[OCR_MicrosoftAzureComputerVisionOCR_EndPoint]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_Language">[OCR_MicrosoftAzureComputerVisionOCR_Language]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_UiPathDocument_Endpoint">[OCR_UiPathDocument_Endpoint]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="DU_ApiKey">[DU_ApiKey]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="docPath">[docPath]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_Name">[OCR_Use.Key]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_ClovaOCR_ApiKey">[OCR_ClovaOCR_ApiKey]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_ClovaOCR_EndPoint">[OCR_ClovaOCR_EndPoint]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_ClovaOCR_Language">[OCR_ClovaOCR_Language]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_SleepTime">[OCR_MicrosoftAzureComputerVisionOCR_SleepTime]</InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="706.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;[&quot; + OCR_Use.Key + &quot; : &quot; + fileName + &quot;] Get Extraction Result&quot;]" />
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DU_GetExtractionResult" sap:VirtualizedContainerService.HintSize="706.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="DU_GetExtractionResult.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="DU_DocumentTypeId">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DU_DocumentTypeId" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="docText">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="docText" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="p1:Document" x:Key="docObjMdl">
+                          <VisualBasicValue x:TypeArguments="p1:Document" ExpressionText="docObjMdl" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="p2:DocumentTaxonomy" x:Key="taxonomy">
+                          <VisualBasicValue x:TypeArguments="p2:DocumentTaxonomy" ExpressionText="taxonomy" />
+                        </InArgument>
+                        <OutArgument x:TypeArguments="p3:ExtractionResult" x:Key="extractionResults">
+                          <VisualBasicReference x:TypeArguments="p3:ExtractionResult" ExpressionText="extractionResults" />
                         </OutArgument>
-                        <OutArgument x:TypeArguments="p1:Document" x:Key="docObjMdl">
-                          <VisualBasicReference x:TypeArguments="p1:Document" ExpressionText="docObjMdl" />
-                        </OutArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_ApiKey">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_MicrosoftAzureComputerVisionOCR_ApiKey" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_EndPoint">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_MicrosoftAzureComputerVisionOCR_EndPoint" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_Language">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_MicrosoftAzureComputerVisionOCR_Language" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_UiPathDocument_Endpoint">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_UiPathDocument_Endpoint" />
+                        <InArgument x:TypeArguments="x:String" x:Key="DU_IntelligentFromExtractor_Endpoint">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DU_IntelligentFromExtractor_Endpoint" />
                         </InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="DU_ApiKey">
                           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DU_ApiKey" />
@@ -451,36 +471,15 @@
                         <InArgument x:TypeArguments="x:String" x:Key="docPath">
                           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="docPath" />
                         </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_Name">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_Use.Key" />
+                        <InArgument x:TypeArguments="x:String" x:Key="DU_FromExtractor_Endpoint">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DU_FromExtractor_Endpoint" />
                         </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_ClovaOCR_ApiKey">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_ClovaOCR_ApiKey" />
+                        <InArgument x:TypeArguments="x:String" x:Key="DU_IntelligentKeywordClassifier_Endpoint">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DU_IntelligentKeywordClassifier_Endpoint" />
                         </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_ClovaOCR_EndPoint">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_ClovaOCR_EndPoint" />
+                        <InArgument x:TypeArguments="x:String" x:Key="DU_ML_Model_Endpoint">
+                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DU_ML_Model_Endpoint" />
                         </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_ClovaOCR_Language">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_ClovaOCR_Language" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="OCR_MicrosoftAzureComputerVisionOCR_SleepTime">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="OCR_MicrosoftAzureComputerVisionOCR_SleepTime" />
-                        </InArgument>
-                      </ui:InvokeWorkflowFile.Arguments>
-                    </ui:InvokeWorkflowFile>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="706.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;[&quot; + OCR_Use.Key + &quot; : &quot; + fileName + &quot;] Get Extraction Result&quot;]" />
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DU_GetExtractionResult" sap:VirtualizedContainerService.HintSize="706.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="DU_GetExtractionResult.xaml">
-                      <ui:InvokeWorkflowFile.Arguments>
-                        <InArgument x:TypeArguments="x:String" x:Key="DU_DocumentTypeId">[DU_DocumentTypeId]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="docText">[docText]</InArgument>
-                        <InArgument x:TypeArguments="p1:Document" x:Key="docObjMdl">[docObjMdl]</InArgument>
-                        <InArgument x:TypeArguments="p2:DocumentTaxonomy" x:Key="taxonomy">[taxonomy]</InArgument>
-                        <OutArgument x:TypeArguments="p3:ExtractionResult" x:Key="extractionResults">[extractionResults]</OutArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="DU_IntelligentFromExtractor_Endpoint">[DU_IntelligentFromExtractor_Endpoint]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="DU_ApiKey">[DU_ApiKey]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="docPath">[docPath]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="DU_FromExtractor_Endpoint">[DU_FromExtractor_Endpoint]</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="DU_IntelligentKeywordClassifier_Endpoint">[DU_IntelligentKeywordClassifier_Endpoint]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
                     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="706.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;[&quot; + OCR_Use.Key + &quot; : &quot; + fileName + &quot;] Get Extracted Result DataTable&quot;]" />
