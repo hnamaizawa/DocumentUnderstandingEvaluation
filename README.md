@@ -12,6 +12,8 @@
 
 ## 最新の更新情報
 
+- **インテリジェントキーワード分類器、フォーム抽出器を利用する機能を追加 (2024-05-13)**: インテリジェントキーワード分類器、フォーム抽出器に対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/b3dc9b5ab608d6d327ba9448a8da0afa9c9c9bff)をご覧ください。
+
 - **FAQ の追加 (2024-03-19)**: 本 README の最後へ[よくある質問](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation?tab=readme-ov-file#faq---%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F)を追記しました。
 
 ---
