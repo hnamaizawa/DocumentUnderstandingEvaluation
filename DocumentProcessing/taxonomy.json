@@ -2,6 +2,7 @@
   "DataContractVersion": "1.1",
   "DocumentTypes": [
     {
+      "Connections": [],
       "DocumentTypeId": "UiPath.Sample.Invoices",
       "Group": "UiPath",
       "Category": "Sample",
@@ -21,7 +22,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.VendorAddr",
@@ -32,7 +35,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.BillingName",
@@ -43,7 +48,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.BillingAddr",
@@ -54,7 +61,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.ShippingAddress",
@@ -65,7 +74,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.InvoiceNo",
@@ -76,7 +87,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.PurchaseOrderNo",
@@ -87,7 +100,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.VendorVATNo",
@@ -98,7 +113,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.Date",
@@ -109,7 +126,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.Tax",
@@ -120,7 +139,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.Total",
@@ -131,7 +152,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.PaymentTerms",
@@ -142,7 +165,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.NetAmount",
@@ -153,7 +178,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.DueDate",
@@ -164,7 +191,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.Discount",
@@ -175,7 +204,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.ShippingCharges",
@@ -186,7 +217,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.PaymentAddress",
@@ -197,7 +230,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.BillingVATNo",
@@ -208,7 +243,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.Currency",
@@ -219,7 +256,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Invoices.Items",
@@ -237,7 +276,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Invoices.Items.Quantity",
@@ -248,7 +289,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Invoices.Items.UnitPrice",
@@ -259,7 +302,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Invoices.Items.LineAmount",
@@ -270,7 +315,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Invoices.Items.ItemPONo",
@@ -281,7 +328,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Invoices.Items.LineNo",
@@ -292,7 +341,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Invoices.Items.PartNo",
@@ -303,16 +354,21 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             }
           ],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         }
       ]
     },
     {
+      "Connections": [],
       "DocumentTypeId": "UiPath.Sample.Receipts",
       "Group": "UiPath",
       "Category": "Sample",
@@ -332,7 +388,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.VendorAddress",
@@ -343,7 +401,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.PhoneNo",
@@ -354,7 +414,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.Dete",
@@ -365,7 +427,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.Total",
@@ -376,7 +440,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.Tax",
@@ -387,7 +453,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.ReceiptNo",
@@ -398,7 +466,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.Currency",
@@ -409,7 +479,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.ExpenseType",
@@ -420,7 +492,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Receipts.Items",
@@ -438,7 +512,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Receipts.Items.Quantity",
@@ -449,7 +525,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Receipts.Items.UnitPrice",
@@ -460,7 +538,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.Receipts.Items.LineAmount",
@@ -471,16 +551,21 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             }
           ],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         }
       ]
     },
     {
+      "Connections": [],
       "DocumentTypeId": "UiPath.Sample.PurchaseOrders",
       "Group": "UiPath",
       "Category": "Sample",
@@ -500,7 +585,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.Date",
@@ -511,7 +598,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.ClientName",
@@ -522,7 +611,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.ClientAddress",
@@ -533,7 +624,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.Name",
@@ -544,7 +637,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.VendorAddr",
@@ -555,7 +650,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.ShippingAddress",
@@ -566,7 +663,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.ShippingName",
@@ -577,7 +676,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.BillingName",
@@ -588,7 +689,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.BillingAddr",
@@ -599,7 +702,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.PaymentTerms",
@@ -610,7 +715,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.DeliverybyDate",
@@ -621,7 +728,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.Discount",
@@ -632,7 +741,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.NetAmount",
@@ -643,7 +754,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.Tax",
@@ -654,7 +767,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.TaxRate",
@@ -665,7 +780,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.Total",
@@ -676,7 +793,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.InvoiceNo",
@@ -687,7 +806,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.VendorVATNo",
@@ -698,7 +819,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.Currency",
@@ -709,7 +832,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.PurchaseOrders.Items",
@@ -727,7 +852,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.Description",
@@ -738,7 +865,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.PartNo",
@@ -749,7 +878,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.DeliveryDate",
@@ -760,7 +891,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.UnitMeasure",
@@ -771,7 +904,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.UnitPrice",
@@ -782,7 +917,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.Quantity",
@@ -793,7 +930,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.LineNetAmount",
@@ -804,7 +943,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.LineTaxRate",
@@ -815,7 +956,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.LineTaxAmount",
@@ -826,7 +969,9 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             },
             {
               "FieldId": "UiPath.Sample.PurchaseOrders.Items.LineAmount",
@@ -837,16 +982,21 @@
               "Components": [],
               "SetValues": [],
               "Metadata": [],
-              "RuleSet": null
+              "RuleSet": null,
+              "DefaultValue": null,
+              "DataSource": null
             }
           ],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         }
       ]
     },
     {
+      "Connections": [],
       "DocumentTypeId": "UiPath.Sample.UtilityBills",
       "Group": "UiPath",
       "Category": "Sample",
@@ -866,7 +1016,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.BillingAddress",
@@ -877,7 +1029,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.Name",
@@ -888,7 +1042,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.VendorAddress",
@@ -899,7 +1055,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.AccountNo",
@@ -910,7 +1068,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.InvoiceNo",
@@ -921,7 +1081,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.Total",
@@ -932,7 +1094,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.Date",
@@ -943,7 +1107,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.DueDate",
@@ -954,7 +1120,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.PaymentAddress",
@@ -965,7 +1133,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.ServicefromDate",
@@ -976,7 +1146,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.ServicetoDate",
@@ -987,7 +1159,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.PaymentTerms",
@@ -998,7 +1172,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.UtilityBills.PreviousBalance",
@@ -1009,11 +1185,14 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         }
       ]
     },
     {
+      "Connections": [],
       "DocumentTypeId": "UiPath.Sample.IDCards",
       "Group": "UiPath",
       "Category": "Sample",
@@ -1033,7 +1212,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.LastName",
@@ -1044,7 +1225,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.FirstName",
@@ -1055,7 +1238,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.BirthPlace",
@@ -1066,7 +1251,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.BirthDate",
@@ -1077,7 +1264,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.Sex",
@@ -1088,7 +1277,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.Nationality",
@@ -1099,7 +1290,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.IDNo",
@@ -1110,7 +1303,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.IssuedDate",
@@ -1121,7 +1316,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.ExpirationDate",
@@ -1132,7 +1329,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.IssuedPlace",
@@ -1143,7 +1342,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.Authority",
@@ -1154,7 +1355,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.IDNo2",
@@ -1165,7 +1368,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.MachineReadableZone",
@@ -1176,7 +1381,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.Address",
@@ -1187,7 +1394,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.IDCards.State",
@@ -1198,11 +1407,14 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         }
       ]
     },
     {
+      "Connections": [],
       "DocumentTypeId": "UiPath.Sample.Passport",
       "Group": "UiPath",
       "Category": "Sample",
@@ -1222,7 +1434,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.LastName",
@@ -1233,7 +1447,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.FirstName",
@@ -1244,7 +1460,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.Nationality",
@@ -1255,7 +1473,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.Sex",
@@ -1266,7 +1486,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.BirthDate",
@@ -1277,7 +1499,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.BirthPlace",
@@ -1288,7 +1512,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.IssuedDate",
@@ -1299,7 +1525,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.Address",
@@ -1310,7 +1538,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.Authority",
@@ -1321,7 +1551,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.ExpirationDate",
@@ -1332,7 +1564,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.MachineReadableZone",
@@ -1343,7 +1577,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.State",
@@ -1354,7 +1590,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.StateCode",
@@ -1365,7 +1603,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.Document-Type",
@@ -1376,7 +1616,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.Document-TypeCode",
@@ -1387,7 +1629,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         },
         {
           "FieldId": "UiPath.Sample.Passport.PersonalID",
@@ -1398,7 +1642,9 @@
           "Components": [],
           "SetValues": [],
           "Metadata": [],
-          "RuleSet": null
+          "RuleSet": null,
+          "DefaultValue": null,
+          "DataSource": null
         }
       ]
     }
