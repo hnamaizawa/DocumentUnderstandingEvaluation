@@ -27,5 +27,17 @@
   "UiPath.UiAutomation.Activities.Generic.CaptureScreenshots": "True",
   "UiPath.UiAutomation.Activities.Generic.ShowClosestMatchesInSearchError": "True",
   "UiPath.UiAutomation.Activities.Browser.RuntimeBrowser": "None",
-  "UiPath.UiAutomation.Activities.RobotLogging.LogTargetInfo": "False"
+  "UiPath.UiAutomation.Activities.RobotLogging.LogTargetInfo": "False",
+  "UiPath.UiAutomation.Activities.Browser.NativeWebView2": "False",
+  "UiPath.UiAutomation.Activities.Browser.EnableWorkaroundForSimulateClickMV3": "False",
+  "UiPath.UiAutomation.Activities.Browser.ExtraCmdLineArgs_Chrome": "",
+  "UiPath.UiAutomation.Activities.Browser.ExtraCmdLineArgs_Edge": "",
+  "UiPath.UiAutomation.Activities.Browser.CustomExePath_Chrome": "",
+  "UiPath.UiAutomation.Activities.Browser.CustomExePath_Edge": "",
+  "UiPath.UiAutomation.Activities.Browser.EnableOpenBrowserRetry_Chrome": "False",
+  "UiPath.UiAutomation.Activities.Browser.EnableOpenBrowserRetry_Edge": "False",
+  "UiPath.UiAutomation.Activities.Browser.OpenBrowserTimeoutSeconds": "60",
+  "UiPath.UiAutomation.Activities.SAP.EnforceHardTimeout": "False",
+  "UiPath.UiAutomation.Activities.SAP.SapAdditionalScaling": "True",
+  "UiPath.UiAutomation.Activities.OtherActivities.ExecutionWorld": "Isolated"
 }

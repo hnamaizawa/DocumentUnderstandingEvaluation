@@ -34,5 +34,8 @@
   "UiPath.UiAutomation.Activities.AbbyyOCR.Scale": "1",
   "UiPath.UiAutomation.Activities.AbbyyOCR.Language": "English",
   "UiPath.OCR.Activities.CjkOCR.Endpoint": "",
-  "UiPath.OCR.Activities.CjkOCR.ApiKey": ""
+  "UiPath.OCR.Activities.CjkOCR.ApiKey": "",
+  "UiPath.OCR.Activities.ExtendedLanguagesOCR.Endpoint": "https://du.uipath.com/extended-ocr",
+  "UiPath.OCR.Activities.ExtendedLanguagesOCR.ApiKey": "",
+  "UiPath.UiAutomation.Activities.GoogleCloudOCR.Region": "Global"
 }

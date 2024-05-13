@@ -57,7 +57,6 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.IntelligentOCR.Activities</x:String>
-      <x:String>UiPath.IntelligentOCR.Activities.Actions.Model</x:String>
       <x:String>UiPath.IntelligentOCR.Activities.DataExtraction</x:String>
       <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
       <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
@@ -123,6 +122,7 @@
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
@@ -372,10 +372,10 @@
                           </ui:MultipleAssign.AssignOperations>
                         </ui:MultipleAssign>
                         <ucas:DownloadStorageFile TimeoutMS="{x:Null}" Destination="[downloadZipFilePath]" DisplayName="Download Storage File" FolderPath="[OC_FolderPath]" sap:VirtualizedContainerService.HintSize="444,185" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_1" Path="[ValidatedExtractionResultsPath]" StorageBucketName="[SB_BucketName]" />
-                        <uascw:ExtractFiles Password="{x:Null}" CodePage="Default" DestinationFolder="assets\Temp\" DestinationFolderInfo="[extractedZipFolderPath]" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="True" FileToExtract="[downloadZipFilePath]" sap:VirtualizedContainerService.HintSize="444,205" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
-                        <ui:ReadTextFile Content="[jsonText]" DisplayName="Read Text File" FileName="[extractedZipFolderPath.ToString + &quot;\output_results.json&quot;]" sap:VirtualizedContainerService.HintSize="444,79" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-                        <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="444,79" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[downloadZipFilePath]" />
-                        <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="444,79" sap2010:WorkflowViewState.IdRef="Delete_2" Path="[extractedZipFolderPath.ToString]" />
+                        <uascw:ExtractFiles Content="{x:Null}" File="{x:Null}" Password="{x:Null}" CodePage="Default" DestinationFolder="assets\Temp\" DestinationFolderInfo="[extractedZipFolderPath]" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="True" FileToExtract="[downloadZipFilePath]" sap:VirtualizedContainerService.HintSize="444,205" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
+                        <ui:ReadTextFile File="{x:Null}" Content="[jsonText]" DisplayName="Read Text File" FileName="[extractedZipFolderPath.ToString + &quot;\output_results.json&quot;]" sap:VirtualizedContainerService.HintSize="444,79" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                        <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="444,79" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[downloadZipFilePath]" />
+                        <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="444,79" sap2010:WorkflowViewState.IdRef="Delete_2" Path="[extractedZipFolderPath.ToString]" />
                         <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="444,98" sap2010:WorkflowViewState.IdRef="MultipleAssign_29">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">

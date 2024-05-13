@@ -41,7 +41,6 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.IntelligentOCR.Activities</x:String>
-      <x:String>UiPath.IntelligentOCR.Activities.Actions.Model</x:String>
       <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
       <x:String>UiPath.PDF.Activities</x:String>
       <x:String>UiPath.PDF.Activities.PDF</x:String>
@@ -90,6 +89,7 @@
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
@@ -142,7 +142,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="933,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[tempFolder]" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="933,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[tempFolder]" />
     <ui:IsMatch BuilderPattern=".pdf$" DisplayName="Is Match" sap:VirtualizedContainerService.HintSize="933,59" sap2010:WorkflowViewState.IdRef="IsMatch_1" Input="[fileName]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;.pdf&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:1,&quot;OperationID&quot;:&quot;END&quot;,&quot;OperationName&quot;:&quot;Ends with&quot;,&quot;OperationValue&quot;:&quot;$&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern=".pdf$" RegexOption="IgnoreCase" Result="[isPdf]" />
     <If Condition="[isPdf]" sap:VirtualizedContainerService.HintSize="933,1069" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
@@ -167,7 +167,7 @@
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
           <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="[docPath]" sap:VirtualizedContainerService.HintSize="412,59" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_7" PageCount="[docPageCnt]" />
-          <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="412,582" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
+          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="412,582" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
             <ui:InterruptibleDoWhile.Body>
               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,417" sap2010:WorkflowViewState.IdRef="Sequence_66">
                 <Sequence.Variables>
@@ -229,6 +229,6 @@
         <InArgument x:TypeArguments="x:Int32" x:Key="docImgInExcelHeight">[docImgInExcelHeight]</InArgument>
       </ui:InvokeCode.Arguments>
     </ui:InvokeCode>
-    <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="933,79" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[tempFolder]" />
+    <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="933,79" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[tempFolder]" />
   </Sequence>
 </Activity>

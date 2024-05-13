@@ -42,7 +42,6 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.IntelligentOCR.Activities</x:String>
-      <x:String>UiPath.IntelligentOCR.Activities.Actions.Model</x:String>
       <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
       <x:String>UiPath.PDF.Activities</x:String>
       <x:String>UiPath.PDF.Activities.PDF</x:String>

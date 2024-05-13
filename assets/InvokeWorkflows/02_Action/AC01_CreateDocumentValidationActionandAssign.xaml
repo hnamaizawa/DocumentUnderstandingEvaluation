@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AC01_CreateDocumentValidationActionandAssign" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p1="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:p3="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiaam="clr-namespace:UiPath.IntelligentOCR.Activities.Actions.Model;assembly=UiPath.IntelligentOCR.Activities" xmlns:upamt="clr-namespace:UiPath.Persistence.Activities.Model.Task;assembly=UiPath.Persistence.Activities" xmlns:upat="clr-namespace:UiPath.Persistence.Activities.Tasks;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AC01_CreateDocumentValidationActionandAssign" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p1="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:p3="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upamt="clr-namespace:UiPath.Persistence.Activities.Model.Task;assembly=UiPath.Persistence.Activities" xmlns:upat="clr-namespace:UiPath.Persistence.Activities.Tasks;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="extractionResults" Type="InArgument(p:ExtractionResult)" />
     <x:Property Name="fileName" Type="InArgument(x:String)" />
@@ -7,7 +7,7 @@
     <x:Property Name="docText" Type="InArgument(x:String)" />
     <x:Property Name="docObjMdl" Type="InArgument(p1:Document)" />
     <x:Property Name="taxonomy" Type="InArgument(p2:DocumentTaxonomy)" />
-    <x:Property Name="actionObject" Type="InOutArgument(uiaam:DocumentValidationActionData)" />
+    <x:Property Name="actionObject" Type="InOutArgument(p3:DocumentValidationActionData)" />
     <x:Property Name="OC_FolderPath" Type="InArgument(x:String)" />
     <x:Property Name="AC_AssignUserEmail" Type="InArgument(x:String)" />
     <x:Property Name="taskAssignmentsResult" Type="OutArgument(scg:List(upat:TaskAssignmentResponse))" />
@@ -52,7 +52,6 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.IntelligentOCR.Activities</x:String>
-      <x:String>UiPath.IntelligentOCR.Activities.Actions.Model</x:String>
       <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
       <x:String>UiPath.PDF.Activities</x:String>
       <x:String>UiPath.PDF.Activities.PDF</x:String>
@@ -150,7 +149,7 @@
         </ui:MultipleAssign>
       </If.Else>
     </If>
-    <p3:CreateDocumentValidationAction TimeoutMs="{x:Null}" ActionCatalog="[AC_ActionCatalog]" ActionOutput="[actionObject]" ActionPriority="Medium" ActionTitle="[fileName]" AutomaticExtractionResults="[extractionResults]" BucketFolderPath="[StorageBucketDirectoryPath]" BucketName="[SB_BucketName]" DisplayName="Create Document Validation Action" DocumentObjectModel="[docObjMdl]" DocumentPath="[docPath]" DocumentText="[docText]" FolderPath="[OC_FolderPath]" sap:VirtualizedContainerService.HintSize="713,365" sap2010:WorkflowViewState.IdRef="CreateDocumentValidationAction_4" ShowOnlyRelevantPageRange="False" Taxonomy="[taxonomy]">
+    <p3:CreateDocumentValidationAction FieldsValidationConfidence="{x:Null}" TimeoutMs="{x:Null}" ActionCatalog="[AC_ActionCatalog]" ActionOutput="[actionObject]" ActionPriority="Medium" ActionTitle="[fileName]" AutomaticExtractionResults="[extractionResults]" BucketFolderPath="[StorageBucketDirectoryPath]" BucketName="[SB_BucketName]" DisplayName="Create Document Validation Action" DocumentObjectModel="[docObjMdl]" DocumentPath="[docPath]" DocumentText="[docText]" FolderPath="[OC_FolderPath]" sap:VirtualizedContainerService.HintSize="713,365" sap2010:WorkflowViewState.IdRef="CreateDocumentValidationAction_4" RetryOnFailure="True" ShowOnlyRelevantPageRange="False" Taxonomy="[taxonomy]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
