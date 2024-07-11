@@ -11,6 +11,9 @@
 ---
 
 ## 最新の更新情報
+
+- **日付型や数値型の項目に日本語などのテキストが設定されていた場合の対処を追加 (2024-07-11)**: 日付型や数値型の項目に日本語などのテキストが設定されていた場合にエラーが発生しワークフロー処理が終了してしまう問題へ対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/ebb89e9009669a4e68e8b920f1f776bc23c8767b)をご覧ください。
+
 - **Cogent Labs SmartReadへの対応、インテリジェントキーワード分類器の改善 (2024-06-14)**: Cogent Labs SmartReadへ対応し、インテリジェントキーワード分類器の学習データ不足の問題を改善しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/7e2836085f22df7f74428b4c2cff1e66a44e27a8)をご覧ください。
 
 - **インテリジェントキーワード分類器、フォーム抽出器を利用する機能を追加 (2024-05-13)**: インテリジェントキーワード分類器、フォーム抽出器に対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/b3dc9b5ab608d6d327ba9448a8da0afa9c9c9bff)をご覧ください。
