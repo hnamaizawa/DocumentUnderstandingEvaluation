@@ -13,8 +13,9 @@
     <x:Property Name="OCR_ClovaOCR_EndPoint" Type="InArgument(x:String)" />
     <x:Property Name="OCR_ClovaOCR_Language" Type="InArgument(x:String)" />
     <x:Property Name="OCR_MicrosoftAzureComputerVisionOCR_SleepTime" Type="InArgument(x:String)" />
+    <x:Property Name="OCR_CogentLabsSmartRead_ApiKey" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>679.2,701.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>716,701.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -144,16 +145,17 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
     </Flowchart.StartNode>
-    <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID4" DisplayName="Which OCR?" Expression="[OCR_Name]" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_3">
+    <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID5" DisplayName="Which OCR?" Expression="[OCR_Name]" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">265,226.5</av:Point>
           <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
           <av:PointCollection x:Key="ClovaOCRConnector">283,226.5 283,196.5 235,196.5 235,98 100,98 100,68</av:PointCollection>
           <av:PointCollection x:Key="MicrosoftAzureComputerVisionOCRConnector">317.8,226.5 317.8,150.4 400,150.4</av:PointCollection>
-          <av:PointCollection x:Key="ExtendedLanguagesOCRConnector">301,313.5 301,343.5 300,343.5 300,426</av:PointCollection>
+          <av:PointCollection x:Key="ExtendedLanguagesOCRConnector">300.2,313.7 300.2,343.7 300,343.7 300,426</av:PointCollection>
+          <av:PointCollection x:Key="CogentLabsSmartReadOCRConnector">265,248.3 235,248.3 235,250.00000000000003 200,250.00000000000003</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <FlowStep x:Key="MicrosoftAzureComputerVisionOCR" x:Name="__ReferenceID1">
@@ -173,7 +175,7 @@
               <ActivityFunc.Argument2>
                 <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
               </ActivityFunc.Argument2>
-              <ui:MicrosoftAzureComputerVisionOCR FilterRegion="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ApiKey="[OCR_MicrosoftAzureComputerVisionOCR_ApiKey]" ComputeSkewAngle="False" DisplayName="Microsoft Azure Computer Vision OCR" Endpoint="[OCR_MicrosoftAzureComputerVisionOCR_EndPoint]" ExtractWords="True" HandwritingRecognition="True" sap:VirtualizedContainerService.HintSize="312,24.8" sap2010:WorkflowViewState.IdRef="MicrosoftAzureComputerVisionOCR_2" Image="[Image]" Language="[OCR_MicrosoftAzureComputerVisionOCR_Language]" NoopExecution="False" PredictionId="[PredictionId]" />
+              <ui:MicrosoftAzureComputerVisionOCR FilterRegion="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ApiKey="[OCR_MicrosoftAzureComputerVisionOCR_ApiKey]" ComputeSkewAngle="False" DisplayName="Microsoft Azure Computer Vision OCR" Endpoint="[OCR_MicrosoftAzureComputerVisionOCR_EndPoint]" ExtractWords="True" HandwritingRecognition="True" sap:VirtualizedContainerService.HintSize="312,24.8" sap2010:WorkflowViewState.IdRef="MicrosoftAzureComputerVisionOCR_1" Image="[Image]" Language="[OCR_MicrosoftAzureComputerVisionOCR_Language]" NoopExecution="False" PredictionId="[PredictionId]" />
             </ActivityFunc>
           </p1:DigitizeDocument.OCREngine>
           <sap:WorkflowViewStateService.ViewState>
@@ -191,7 +193,7 @@
                 <av:Size x:Key="ShapeSize">200,52.8</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Delay DisplayName="待機" Duration="[TimeSpan.Parse(OCR_MicrosoftAzureComputerVisionOCR_SleepTime)]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <Delay DisplayName="待機" Duration="[TimeSpan.Parse(OCR_MicrosoftAzureComputerVisionOCR_SleepTime)]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="Delay_2" />
           </FlowStep>
         </FlowStep.Next>
       </FlowStep>
@@ -238,7 +240,34 @@
               <ActivityFunc.Argument2>
                 <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
               </ActivityFunc.Argument2>
-              <p2:ExtendedLanguagesOCR Output="{x:Null}" Text="{x:Null}" ApiKey="[DU_ApiKey]" ComputeSkewAngle="False" DisplayName="UiPath Extended Languages OCR" Endpoint="[OCR_UiPathDocument_Endpoint]" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,24.8" sap2010:WorkflowViewState.IdRef="ExtendedLanguagesOCR_1" Image="[Image]" Language="auto" NoopExecution="False" PredictionId="[PredictionId]" Profile="None" Scale="1" Timeout="100000" />
+              <p2:ExtendedLanguagesOCR Output="{x:Null}" Text="{x:Null}" ApiKey="[DU_ApiKey]" ComputeSkewAngle="False" DisplayName="UiPath 拡張言語 OCR (プレビュー)" Endpoint="[OCR_UiPathDocument_Endpoint]" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,24.8" sap2010:WorkflowViewState.IdRef="ExtendedLanguagesOCR_1" Image="[Image]" Language="auto" NoopExecution="False" PredictionId="[PredictionId]" Profile="None" Scale="1" Timeout="100000" />
+            </ActivityFunc>
+          </p1:DigitizeDocument.OCREngine>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </p1:DigitizeDocument>
+      </FlowStep>
+      <FlowStep x:Key="CogentLabsSmartReadOCR" x:Name="__ReferenceID4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">0,215.60000000000002</av:Point>
+            <av:Size x:Key="ShapeSize">200,68.8</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <p1:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Yes" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="CogentLabsSmartReadOCR" DocumentObjectModel="[docObjMdl]" DocumentPath="[docPath]" DocumentText="[docText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="DigitizeDocument_29">
+          <p1:DigitizeDocument.OCREngine>
+            <ActivityFunc x:TypeArguments="sd:Image, x:String, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+              <ActivityFunc.Argument1>
+                <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+              </ActivityFunc.Argument1>
+              <ActivityFunc.Argument2>
+                <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+              </ActivityFunc.Argument2>
+              <sbo:CogentLabsOCREngine Language="{x:Null}" Output="{x:Null}" Text="{x:Null}" ApiKey="[OCR_CogentLabsSmartRead_ApiKey]" DisplayName="Cogent Labs OCR Engine" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,80.8" sap2010:WorkflowViewState.IdRef="CogentLabsOCREngine_1" Image="[Image]" PredictionId="[PredictionId]" />
             </ActivityFunc>
           </p1:DigitizeDocument.OCREngine>
           <sap:WorkflowViewStateService.ViewState>
@@ -254,5 +283,6 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
   </Flowchart>
 </Activity>
