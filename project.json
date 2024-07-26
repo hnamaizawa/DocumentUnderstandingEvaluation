@@ -4,7 +4,7 @@
   "description": "",
   "main": "01_ExtractDocumentsData.xaml",
   "dependencies": {
-    "CustomDUActivities": "[1.0.7]",
+    "CustomDUActivities": "[1.0.8]",
     "UiPath.DocumentUnderstanding.Activities": "[2.9.0]",
     "UiPath.DocumentUnderstanding.ML.Activities": "[1.28.1]",
     "UiPath.Excel.Activities": "[2.22.3]",
@@ -60,7 +60,6 @@
         "fileName": "01_ExtractDocumentsData.xaml"
       }
     ],
-    "modernBehavior": true,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
