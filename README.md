@@ -12,6 +12,10 @@
 
 ## 最新の更新情報
 
+- **ReadMe.PDF を更新 (2024-08-07)**: ReadMe.pdf を最新のフォーマットへ変更へ対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/24043e0f5f74e23bc63f13421db4db41eb6156a3)をご覧ください。
+
+- **AI inside DX Suiteへの対応 (2024-07-26)**: AI inside DX Suiteへ対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/d4b85279e3ccd3c577d92e2b0ab6c5da0eebe416)をご覧ください。
+
 - **日付型や数値型の項目に日本語などのテキストが設定されていた場合の対処を追加 (2024-07-11)**: 日付型や数値型の項目に日本語などのテキストが設定されていた場合にエラーが発生しワークフロー処理が終了してしまう問題へ対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/ebb89e9009669a4e68e8b920f1f776bc23c8767b)をご覧ください。
 
 - **Cogent Labs SmartReadへの対応、インテリジェントキーワード分類器の改善 (2024-06-14)**: Cogent Labs SmartReadへ対応し、インテリジェントキーワード分類器の学習データ不足の問題を改善しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/7e2836085f22df7f74428b4c2cff1e66a44e27a8)をご覧ください。
