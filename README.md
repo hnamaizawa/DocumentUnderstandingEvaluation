@@ -12,7 +12,7 @@
 
 ## 最新の更新情報
 
-- **ReadMe.PDF を更新 (2024-08-07)**: ReadMe.pdf を最新のフォーマットへ変更へ対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/24043e0f5f74e23bc63f13421db4db41eb6156a3)をご覧ください。
+- **ReadMe.PDF を更新 (2024-08-07)**: ReadMe.pdf を最新のフォーマットへ変更しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/24043e0f5f74e23bc63f13421db4db41eb6156a3)をご覧ください。
 
 - **AI inside DX Suiteへの対応 (2024-07-26)**: AI inside DX Suiteへ対応しました。詳細は[変更ログ](https://github.com/hnamaizawa/DocumentUnderstandingEvaluation/commit/d4b85279e3ccd3c577d92e2b0ab6c5da0eebe416)をご覧ください。
 
